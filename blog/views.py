@@ -54,7 +54,10 @@ class PostTAV(TodayArchiveView) :
     model = Post
     date_field = 'modify_date'
 
-#--- FormView
+# -------------------------------------------
+#--->  FormView  ----->
+#--------------------------------------------
+
 class SearchFormView(FormView):
     form_class = PostSearchForm
     template_name = 'blog/post_search.html'
